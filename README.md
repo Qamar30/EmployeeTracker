@@ -6,4 +6,4 @@
 
 1. Clone to localhost directory
 2. edit config file according to your database settings
-3. import employee_app sql to created database table
+3. import employee_app sql to create database table
