@@ -8,7 +8,7 @@ session_start();
 // check if the user is already logged in, if yes then redirect them to welcome page
 
 if (isset($_SESSION["loggedin"])  && $_SESSION["loggedin"] === true)              {
-    header("location: welcome.php");
+    header("location: index.php");
     exit;
 }
 
@@ -81,7 +81,7 @@ if($stmt = $mysqli->prepare($sql)){
                             $_SESSION["username"] = $username;                            
                             
                             // Redirect user to welcome page
-                            header("location: welcome.php");
+                            header("location: index.php");
                         } else{
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
